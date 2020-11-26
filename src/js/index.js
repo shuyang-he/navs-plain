@@ -17,8 +17,11 @@
       .classList.toggle("nav-banner--active");
   }
 
-  function handleSubMenu() {
-    document.querySelectorAll("submenu");
+  function handleSubMenu(li) {
+    const submenu = li.querySelector(".submenu");
+    if (submenu) {
+      submenu.classList.toggle("submenu--active");
+    }
   }
 
   document.querySelector(".menu").addEventListener(
@@ -46,20 +49,14 @@
     li.addEventListener(
       "mouseenter",
       () => {
-        const submenu = li.querySelector(".submenu");
-        if (submenu) {
-          submenu.classList.toggle("submenu--active");
-        }
+        handleSubMenu(li);
       },
       false
     );
     li.addEventListener(
       "mouseleave",
       () => {
-        const submenu = li.querySelector(".submenu");
-        if (submenu) {
-          submenu.classList.toggle("submenu--active");
-        }
+        handleSubMenu(li);
       },
       false
     );

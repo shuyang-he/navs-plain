@@ -135,7 +135,6 @@
 }
 
 .nav-banner {
-  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -146,7 +145,6 @@
   transition: 0.3s ease-in-out;
 
   &--active {
-    display: block;
     opacity: 0.5;
   }
 }
