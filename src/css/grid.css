@@ -1,11 +1,6 @@
 :root {
   --font: "Inter", sans-serif;
-  --font-color: #000000;
 }
-
-$breakpoint-sm: 479px;
-$breakpoint-md: 767px;
-$breakpoint-lg: 991px;
 
 html {
   scroll-behavior: smooth;
@@ -21,6 +16,13 @@ body {
   height: 100%;
 }
 
-a {
-  color: var(--font-color);
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/*# sourceMappingURL=grid.css.map */

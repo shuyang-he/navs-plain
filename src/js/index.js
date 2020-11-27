@@ -1,62 +1,41 @@
 (function () {
   "use strict";
 
-  function handleMenu() {
-    document.querySelector(".menu").classList.toggle("menu--active");
-  }
-
-  function handleNav() {
+  function handleNavWrapper() {
     document
-      .querySelector(".pagehead__drop")
-      .classList.toggle("pagehead__drop--active");
+      .querySelector(".nav-items-wrapper-mobile")
+      .classList.toggle("nav-items-wrapper-mobile--active");
   }
 
-  function handleNavBanner() {
-    document
-      .querySelector(".nav-banner")
-      .classList.toggle("nav-banner--active");
-  }
-
-  function handleSubMenu(li) {
-    const submenu = li.querySelector(".submenu");
-    if (submenu) {
-      submenu.classList.toggle("submenu--active");
+  function handleNav(ele) {
+    const nav = ele.querySelector(".mobile-product-nav");
+    if (nav) {
+      nav.classList.toggle("mobile-product-nav--active");
     }
   }
 
-  document.querySelector(".menu").addEventListener(
+  function handleSubMenu(ele) {
+    const submenu = ele.querySelector(".mobile-product-submenu");
+    if (submenu) {
+      submenu.classList.toggle("mobile-product-submenu--active");
+    }
+  }
+
+  document.querySelector(".menu-button").addEventListener(
     "click",
     () => {
-      handleMenu();
-      handleNav();
-      handleNavBanner();
+      handleNavWrapper();
     },
     false
   );
 
-  document.querySelector(".nav-banner").addEventListener(
-    "click",
-    () => {
-      handleMenu();
-      handleNav();
-      handleNavBanner();
-    },
-    false
-  );
-
-  const pagehead__drop = document.querySelectorAll(".pagehead__drop > li");
-  for (let li of pagehead__drop) {
-    li.addEventListener(
-      "mouseenter",
+  const mobileProductMenu = document.querySelectorAll(".mobile-product-menu");
+  for (let ele of mobileProductMenu) {
+    ele.addEventListener(
+      "click",
       () => {
-        handleSubMenu(li);
-      },
-      false
-    );
-    li.addEventListener(
-      "mouseleave",
-      () => {
-        handleSubMenu(li);
+        handleNav(ele);
+        handleSubMenu(ele);
       },
       false
     );

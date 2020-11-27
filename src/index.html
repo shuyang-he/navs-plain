@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:300,400,600"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800"
+      media="all"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/base.css" />
@@ -20,245 +25,98 @@
   </head>
   <body>
     <div id="root">
-      <header>
+      <header class="navigation">
         <div class="nav-primary-mobile">
-          <div class="logo-header">
-            <a
-              href="/"
-              aria-current="page"
-              class="logo-link-wrapper w-nav-brand w--current"
-              ><img
-                src="https://uploads-ssl.webflow.com/5f44daa873625544f3fda70c/5f44daa87362552712fda777_AppliedLogo.svg"
-                width="214"
-                alt=""
-                class="logo-image" /></a
-            ><img
-              src="https://uploads-ssl.webflow.com/5f44daa873625544f3fda70c/5f44daa8736255e520fda9fd_applied-menu.svg"
-              width="22"
-              alt=""
-              class="image-52"
-            />
-            <div
-              data-w-id="2b1cb29a-7291-c952-1d96-931c64f3cb6d"
-              class="menu-button"
-            ></div>
+          <div class="container logo-header">
+            <a href="/">
+              <img src="./media/AppliedLogo.svg" width="214" alt="" />
+            </a>
+            <img src="./media/applied-menu.svg" width="22" alt="" />
+            <div class="menu-button"></div>
           </div>
-          <div class="nav-items-wrapper-mobile" style="display: none">
-            <div
-              data-w-id="2b1cb29a-7291-c952-1d96-931c64f3cb70"
-              class="dropdown-toggle-customers"
-            >
-              <div>Products</div>
-              <img
-                src="https://uploads-ssl.webflow.com/5f44daa873625544f3fda70c/5f44daa87362557f37fda9c1_dropdown-arrow.svg"
-                loading="lazy"
-                alt=""
-                class="dropdown-icon"
-              />
-            </div>
+
+          <div class="nav-items-wrapper-mobile">
             <div class="mobile-product-menu">
-              <div
-                data-w-id="2b1cb29a-7291-c952-1d96-931c64f3cb75"
-                class="mobile-product-nav"
-              >
+              <div class="mobile-product-nav">
                 <div>Products</div>
-                <img
-                  src="https://uploads-ssl.webflow.com/5f44daa873625544f3fda70c/5f44daa87362557f37fda9c1_dropdown-arrow.svg"
-                  loading="lazy"
-                  alt=""
-                  class="dropdown-icon-2"
-                  style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  "
-                />
+                <img src="./media/dropdown-arrow.svg" alt="" />
               </div>
-              <div class="mobile-product-submenu" style="display: none">
-                <a href="/overview" class="mobile-submenu-item w-inline-block"
-                  ><div>Overview</div></a
-                ><a
-                  href="/simulation"
-                  class="mobile-submenu-item w-inline-block"
-                  ><div>Simulation</div></a
-                ><a
-                  href="/infrastructure"
-                  class="mobile-submenu-item w-inline-block"
-                  ><div>Infrastructure</div></a
-                >
+
+              <div class="mobile-product-submenu">
+                <a href="/overview" class="mobile-submenu-item">
+                  <div>Overview</div>
+                </a>
+                <a href="/simulation" class="mobile-submenu-item">
+                  <div>Simulation</div>
+                </a>
+                <a href="/infrastructure" class="mobile-submenu-item">
+                  <div>Infrastructure</div>
+                </a>
               </div>
             </div>
-            <div
-              data-hover=""
-              data-delay="0"
-              class="dropdown-customers w-dropdown"
-            >
-              <div
-                class="dropdown-toggle-2 w-dropdown-toggle"
-                id="w-dropdown-toggle-3"
-                aria-controls="w-dropdown-list-3"
-                aria-haspopup="menu"
-                aria-expanded="false"
-                role="button"
-                tabindex="0"
-              >
+
+            <div class="mobile-product-menu">
+              <a href="#" class="mobile-product-nav">
                 <div>Customers</div>
-                <img
-                  src="https://uploads-ssl.webflow.com/5f44daa873625544f3fda70c/5f44daa87362557f37fda9c1_dropdown-arrow.svg"
-                  loading="lazy"
-                  alt=""
-                  class="dropdown-icon-2"
-                />
-              </div>
-              <nav
-                class="dropdown-list-2 w-dropdown-list"
-                id="w-dropdown-list-3"
-                aria-labelledby="w-dropdown-toggle-3"
-              >
-                <div class="customers-selector-2">
-                  <div>Customer work</div>
-                  <div class="text-block-68">
-                    We’re proud to work closely with top AV companies and OEMs
-                    from around the world.
-                  </div>
-                </div>
-                <div class="customers-selector-2">
+                <img src="./media/dropdown-arrow.svg" alt="" />
+              </a>
+
+              <div class="mobile-product-submenu">
+                <a href="/success-stories" class="mobile-submenu-item">
+                  <div>Success Stories</div>
+                </a>
+                <a href="/industries" class="mobile-submenu-item">
                   <div>Industries</div>
-                  <div class="text-block-68">
-                    Applied's flexible development platform enables companies
-                    across industries to bring autonomy to market.
-                  </div>
-                </div>
-              </nav>
-            </div>
-            <div class="mobile-product-menu">
-              <a
-                data-w-id="2b1cb29a-7291-c952-1d96-931c64f3cb94"
-                href="#"
-                class="mobile-product-nav w-inline-block"
-                ><div>Customers</div>
-                <img
-                  src="https://uploads-ssl.webflow.com/5f44daa873625544f3fda70c/5f44daa87362557f37fda9c1_dropdown-arrow.svg"
-                  loading="lazy"
-                  alt=""
-                  class="dropdown-icon-2"
-                  style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(180deg)
-                      skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  "
-              /></a>
-              <div class="mobile-product-submenu" style="display: flex">
-                <a
-                  href="/success-stories"
-                  class="mobile-submenu-item w-inline-block"
-                  ><div>Success Stories</div></a
-                ><a
-                  href="/industries"
-                  class="mobile-submenu-item w-inline-block"
-                  ><div>Industries</div></a
-                >
+                </a>
               </div>
             </div>
-            <a href="/services" class="nav-button-2 w-inline-block"
-              ><div>Services</div></a
-            ><a href="/careers" class="nav-button-2 w-inline-block"
-              ><div>Careers</div></a
-            ><a
-              href="http://blog.applied.co"
-              target="_blank"
-              class="nav-button-2 w-inline-block"
-              ><div>Blog</div></a
-            ><a href="/about" class="nav-button-2 w-inline-block"
-              ><div>About</div></a
-            >
+
+            <a href="/services" class="nav-button-2">
+              <div>Services</div>
+            </a>
+
+            <a href="/careers" class="nav-button-2">
+              <div>Careers</div>
+            </a>
+
+            <a href="http://blog.applied.co" class="nav-button-2">
+              <div>Blog</div>
+            </a>
+
+            <a href="/about" class="nav-button-2">
+              <div>About</div>
+            </a>
+
             <div class="mobile-product-menu">
-              <a
-                data-w-id="2b1cb29a-7291-c952-1d96-931c64f3cbac"
-                href="#"
-                class="mobile-product-nav w-inline-block"
-                ><div>Resources</div>
-                <img
-                  src="https://uploads-ssl.webflow.com/5f44daa873625544f3fda70c/5f44daa87362557f37fda9c1_dropdown-arrow.svg"
-                  loading="lazy"
-                  alt=""
-                  class="dropdown-icon-2"
-                  style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  "
-              /></a>
-              <div class="mobile-product-submenu" style="display: none">
-                <a href="/press-kit" class="mobile-submenu-item w-inline-block"
-                  ><div>Press Kit</div></a
-                ><a
-                  href="/privacy-policy"
-                  class="mobile-submenu-item w-inline-block"
-                  ><div>Privacy Policy</div></a
-                >
+              <a href="#" class="mobile-product-nav">
+                <div>Resources</div>
+                <img src="./media/dropdown-arrow.svg" alt="" />
+              </a>
+              <div class="mobile-product-submenu">
+                <a href="/press-kit" class="mobile-submenu-item">
+                  <div>Press Kit</div>
+                </a>
+                <a href="/privacy-policy" class="mobile-submenu-item">
+                  <div>Privacy Policy</div>
+                </a>
               </div>
             </div>
+
             <div class="mobile-contact-wrapper">
-              <a href="/contact-us" class="mobile-cc-button w-inline-block"
-                ><div localize="request-demo" class="button-text">
-                  Contact Us
-                </div></a
-              >
+              <a href="/contact-us" class="mobile-cc-button">Contact Us</a>
             </div>
+
             <div class="mobile-lang-wrapper">
               <div class="mobile-lang-selectors">
-                <a href="/de/home" class="mobile-lang-button w-inline-block"
-                  ><div class="lang-button-text">deutsch</div></a
-                ><a href="/jp/home" class="mobile-lang-button w-inline-block"
-                  ><div class="lang-button-text">日本語</div></a
-                ><a href="/kr/home" class="mobile-lang-button w-inline-block"
-                  ><div class="lang-button-text">한국어</div></a
-                >
-              </div>
-            </div>
-            <div class="html-lang-selector-2 w-embed">
-              <div class="dropdown">
-                <div
-                  onclick="showLanguageDropdown()"
-                  class="dropbtn"
-                  id="lang-dropbtn"
-                >
-                  <img
-                    onclick=""
-                    style="padding-bottom: 3px"
-                    class="lang-icon"
-                    src="https://s3-us-west-1.amazonaws.com/appliedcdn/globe.svg"
-                  />
-                  <div onclick="" id="current-lang">EN</div>
-                  <img
-                    onclick=""
-                    class="lang-icon"
-                    src="https://s3-us-west-1.amazonaws.com/appliedcdn/lang-arrow.svg"
-                  />
-                </div>
-
-                <div
-                  id="lang-dropdown"
-                  class="dropdown-content lang-dropdown-content"
-                >
-                  <div class="lang-padding-top"></div>
-                  <a
-                    href="/"
-                    class="lang-option w--current"
-                    id="lang-EN"
-                    val="EN"
-                    >English</a
-                  >
-                  <a href="/de" class="lang-option" id="lang-DE" val="DE"
-                    >Deutsch</a
-                  >
-                  <a href="/jp" class="lang-option" id="lang-JP" val="JP"
-                    >日本語</a
-                  >
-                  <div class="lang-padding-bottom"></div>
-                </div>
+                <a href="/de/home" class="mobile-lang-button">
+                  <div class="lang-button-text">deutsch</div>
+                </a>
+                <a href="/jp/home" class="mobile-lang-button">
+                  <div class="lang-button-text">日本語</div>
+                </a>
+                <a href="/kr/home" class="mobile-lang-button">
+                  <div class="lang-button-text">한국어</div>
+                </a>
               </div>
             </div>
           </div>

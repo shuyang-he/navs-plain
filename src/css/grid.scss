@@ -1,0 +1,12 @@
+@import "./base.scss";
+
+$padding: 20px;
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: $padding;
+  padding-right: $padding;
+  margin-left: auto;
+  margin-right: auto;
+}
