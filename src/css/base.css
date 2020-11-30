@@ -16,6 +16,7 @@
   --artdeco-typography-th: Leelawadee, Thonburi, var(--artdeco-typography-sans);
   --artdeco-typography-zh: Microsoft Yahei, PingFang SC, PingFang TC,
     Hiragino Sans, Hiragino Kaku Gothic Pro, var(--artdeco-typography-sans);
+
   --black: #000;
   --black-a90: rgba(0, 0, 0, 0.9);
   --black-a75: rgba(0, 0, 0, 0.75);
@@ -431,5 +432,3 @@
   --voyager-color-background-container-tint-2: var(--cool-gray-20);
   --voyager-color-background-input-search: var(--cool-gray-20);
 }
-
-/*# sourceMappingURL=base.css.map */
